@@ -1,7 +1,8 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Education
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+2017/09 - 2022/06, MBBS, Clinical Medicine, SUN YAT-SEN University, Guangzhou, China
+2022/09 - 2025/07, M.S. Pediatrics, Capital Institue of Pediatrics, Beijing, China
+2025/09 - now, Ph.D., Pediatrics, Captital Institute of Pediatrics-Peking University Teaching Hospital,Peking University, Beijing, China
