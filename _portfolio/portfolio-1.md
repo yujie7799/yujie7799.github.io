@@ -2,7 +2,6 @@
 permalink: /
 title: "Education"
 author_profile: true
-collection:Education
 ---
 
 2017/09 - 2022/06, MBBS, Clinical Medicine, SUN YAT-SEN University, Guangzhou, China
