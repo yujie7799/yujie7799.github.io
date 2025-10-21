@@ -6,8 +6,7 @@ permalink: /publication/2024-12-20-Frontiers in Cellular and Infection Microbiol
 excerpt: ''
 date: 2024-12-20
 venue: 'Frontiers in Cellular and Infection Microbiology'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'http://yujie7799.github.io/files/p2.pdf'
 citation: 'Jia X, Chen Y, Gao Y, Ren X, Du B, Zhao H, Feng Y, Xue G, Cui J, Gan L, Feng J, Fan Z, Fu T, Xu Z, Yu Z, Yang Y, Zhao S, Huang L, Ke Y, Liu C, Yan C, Yuan J. Increased in vitro antimicrobial resistance of Mycoplasma pneumoniae isolates obtained from children in Beijing, China, in 2023. Front Cell Infect Microbiol. 2024 Dec 20;14:1478087. doi: 10.3389/fcimb.2024.1478087. PMID: 39760095; PMCID: PMC11695237.'
 ---
 
