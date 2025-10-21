@@ -6,8 +6,7 @@ permalink: /publication/2025-07-30-JAC-antimicrobial Resistance
 excerpt: ''
 date: 2025-07-30
 venue: 'JAC-antimicrobial Resistance'
-slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'http://academicpages.github.io/files/p3.pdf'
 citation: 'Yan C, Chen Y, Ren X, Jia X, Du B, Zhao H, Feng Y, Xue G, Cui J, Liu X, Yuan J. In vitro antimicrobial susceptibility of Mycoplasma pneumoniae isolates across different regions of China in 2023. JAC Antimicrob Resist. 2025 Jul 30;7(4):dlaf124. doi: 10.1093/jacamr/dlaf124. PMID: 40741382; PMCID: PMC12308128.'
 ---
 
