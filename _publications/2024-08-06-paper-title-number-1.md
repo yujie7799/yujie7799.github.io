@@ -2,7 +2,7 @@
 title: "Increased macrolide resistance rate of Mycoplasma pneumoniae correlated with epidemic in Beijing, China in 2023"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2024-08-06-Frontiers in Microbiology
 excerpt: ''
 date: 2024-08-06
 venue: 'Frontiers in Microbiology'
