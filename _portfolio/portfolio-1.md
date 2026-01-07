@@ -1,7 +1,5 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/image/500x200.png'>"
-collection: portfolio
+* Ph.D in Pediatrics, Peking University, 2025 untill now 
+* M.S. in Pediatrics, Capital Institue of Pediatrics, 2022-2025
+* B.S. in Cinical Medicine, Sun Yat-sun  University, 2017-2022
 ---
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
