@@ -7,30 +7,18 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-## 我的研究方向
-我长期致力于人工智能与计算机科学交叉领域的研究，核心研究兴趣集中在以下方向：
+## My Research Focus
+I mainly focus on the pathogenic mechanism of Mycoplasma pneumoniae infection in children, including:
 
-### 1. 核心研究领域
-- **自然语言处理（NLP）**：
-  重点研究大语言模型的轻量化部署、低资源场景下的模型适配，以及多模态语义理解。
-- **计算机视觉（CV）**：
-  探索视觉-语言预训练模型的跨模态对齐方法，解决复杂场景下的图像文本匹配问题。
-- **数据挖掘**：
-  关注大规模异构数据的清洗、建模与知识图谱构建，落地工业级数据应用。
+## 1. Clinical characteristics analysis
+Collect and analyze clinical data of pediatric patients with Mycoplasma pneumoniae pneumonia, summarize the epidemiological characteristics and clinical manifestations.
 
-### 2. 近期研究重点（2024-2026）
-1. 边缘设备上大模型的高效推理算法优化
-2. 小样本学习在低资源语言处理中的应用
-3. 多模态模型的可解释性与鲁棒性提升
+## 2. Molecular biology research
+Study the interaction between Mycoplasma pneumoniae and host cells, explore key genes and signaling pathways involved in infection.
 
-### 3. 合作与研究愿景
-我希望通过跨学科合作，将算法研究落地到实际场景中，例如：
-- 智能医疗中的医学文本与影像分析
-- 教育领域的个性化学习推荐系统
+## 3. Antibiotic resistance research
+Investigate the drug resistance status of Mycoplasma pneumoniae and analyze the resistance mechanism.
 
-> 注：相关研究成果会持续更新在我的 [论文列表](/publications/) 页面。
-
-## 联系方式
-如果有相关研究方向的合作意向，可通过以下方式联系：
-- 邮箱：your-email@example.com
-- 实验室：XX大学计算机学院 XX实验室
+Collaboration is welcome! If you are interested in related research, please contact me via email.tags:
+ 
+  
