@@ -9,18 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
 * Ph.D in Pediatrics, Peking University, 2025.9 untill now
 * M.S. in Pediatrics, Capital Institute of Pediatrics, 2022.8-2025.6
 * B.S. in Clinical Medicine, Sun Yat-sen University, 2017.9-2022.6
 
-Work experience
-======
+## Work experience
 None
   
-Skills
-======
+## Skills
 ### Core Experimental Techniques
 1. **Microbiology & Pharmacology Assays**  
 Isolation and culture of bacteria, antimicrobial susceptibility testing.
@@ -37,19 +34,16 @@ In vitro cell culture and functional experiments, in vivo animal experiments.
 ### Data Analysis & Visualization Tools
 Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and Python for experimental data analysis, statistical evaluation, and scientific figure visualization.
 
-Publications
-======
+## Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
   
-Teaching
-======
+## Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
+## Service and leadership
 * Currently signed in to 43 different slack teams
