@@ -21,21 +21,21 @@ None
   
 Skills
 ======
-* Microbiology & Pharmacology Assays
-  *Isolation and culture of bacteria
-  *antimicrobial susceptibility testing
-* Molecular Biology Techniques
-  *Polymerase Chain Reaction (PCR)
-  *Quantitative Real-Time PCR (qPCR)
-* Immunological Assays
-  *Enzyme-Linked Immunosorbent Assay (ELISA)
-  *Immunofluorescence staining
-  *Western Blot
-* Cell & Animal Model Experiments
-  *In vitro cell culture and functional experiments
-  *In vivo animal experiment
-* Data Analysis & Visualization Tools
-  *GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and Python for experimental data analysis, statistical evaluation,       and scientific figure visualization.
+### Core Experimental Techniques
+1. **Microbiology & Pharmacology Assays**  
+Isolation and culture of bacteria, antimicrobial susceptibility testing.
+
+2. **Molecular Biology Techniques**  
+Polymerase Chain Reaction (PCR), Quantitative Real-Time PCR (qPCR).
+
+3. **Immunological Assays**  
+Enzyme-Linked Immunosorbent Assay (ELISA), immunofluorescence staining, Western Blot.
+
+4. **Cell & Animal Model Experiments**  
+In vitro cell culture and functional experiments, in vivo animal experiments.
+
+### Data Analysis & Visualization Tools
+Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and Python for experimental data analysis, statistical evaluation, and scientific figure visualization.
 
 Publications
 ======
