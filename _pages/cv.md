@@ -13,9 +13,6 @@ redirect_from:
 * Ph.D in Pediatrics, Peking University, 2025.9 untill now
 * M.S. in Pediatrics, Capital Institute of Pediatrics, 2022.8-2025.6
 * B.S. in Clinical Medicine, Sun Yat-sen University, 2017.9-2022.6
-
-## Work experience
-None
   
 ## Skills
 ### Core Experimental Techniques
@@ -47,3 +44,6 @@ Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and P
   
 ## Service and leadership
 * Currently signed in to 43 different slack teams
+
+## Work experience
+None
