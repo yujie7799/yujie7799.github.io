@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /year-archive/
+permalink: /
 title: "Research Interests"
 author_profile: true
 ---
