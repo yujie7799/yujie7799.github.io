@@ -21,6 +21,7 @@ Investigate the drug resistance status of Mycoplasma pneumoniae and analyze the 
 
 ### Collaboration
 Collaboration is welcome! If you are interested in related research, please contact me.
+
 📧 Email: yujie5376@163.com  
 🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics
 
