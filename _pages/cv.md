@@ -21,12 +21,21 @@ None
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 1. Microbiology & Pharmacology Assays
+     Isolation and culture of bacteria
+     antimicrobial susceptibility testing
+* 2. Molecular Biology Techniques
+     Polymerase Chain Reaction (PCR)
+     Quantitative Real-Time PCR (qPCR)
+* 3. Immunological Assays
+     Enzyme-Linked Immunosorbent Assay (ELISA)
+     Immunofluorescence staining
+     Western Blo
+* 4. Cell & Animal Model Experiments
+     In vitro cell culture and functional experiments
+     In vivo animal experiment
+* 5. Data Analysis & Visualization Tools
+     GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and Python for experimental data analysis, statistical evaluation,       and scientific figure visualization.
 
 Publications
 ======
@@ -34,11 +43,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
 Teaching
 ======
