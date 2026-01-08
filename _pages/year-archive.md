@@ -3,11 +3,6 @@ layout: archive
 permalink: /year-archive/
 title: "Research Interests"
 author_profile: true
-tags:
-  - Mycoplasma pneumoniae
-  - Macrolide resistance
-  - Children
-  - Pneumonia
 ---
 
 {% include base_path %}
@@ -24,10 +19,13 @@ Study the interaction between *Mycoplasma pneumoniae* and host cells, explore ke
 ### 3. Antibiotic resistance research
 Investigate the drug resistance status of *Mycoplasma pneumoniae* and analyze the resistance mechanism.
 
+🔖Keywords: *Mycoplasma pneumoniae*; Macrolide resistance; Children; Pneumonia
+
 ### Collaboration
 Collaboration is welcome! If you are interested in related research, please contact me.
 
 📧 Email: yujie5376@163.com  
-🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics
+🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics, Beijing, China
+
 
 
