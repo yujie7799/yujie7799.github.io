@@ -3,6 +3,11 @@ layout: archive
 permalink: /year-archive/
 title: "Research Interests"
 author_profile: true
+tags:
+  - Mycoplasma pneumoniae
+  - Macrolide resistance
+  - Children
+  - Pneumonia
 ---
 
 {% include base_path %}
@@ -21,9 +26,7 @@ Investigate the drug resistance status of Mycoplasma pneumoniae and analyze the 
 
 ### Collaboration
 Collaboration is welcome! If you are interested in related research, please contact me.
-
 📧 Email: yujie5376@163.com  
 🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics
 
- *Tags: Mycoplasma pneumoniae, pediatric infection, antibiotic resistance, molecular mechanism*
 
