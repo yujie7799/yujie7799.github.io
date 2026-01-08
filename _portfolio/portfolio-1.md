@@ -1,6 +1,10 @@
 ---
 title: "Peking University"
-excerpt: "Peking University, 2025 untill now"
+excerpt: "Ph.D. in Pediatrics, 2025.9 untill now"
+title: " Capital Institue of Pediatrcis"
+excerpt: "M.D. in Pediatrics, 2022.8-2025.6n"
+title: "Sun Yat-sen University"
+excerpt: "B.S. in Clinical Medicine, 2017.9-2022.6"
 collection: portfolio
 ---
 
