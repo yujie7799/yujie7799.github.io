@@ -1,5 +1,4 @@
 ---
-layout: page
 permalink: /
 title: ""
 author_profile: true
