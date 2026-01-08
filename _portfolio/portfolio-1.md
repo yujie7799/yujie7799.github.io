@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Peking University"
+excerpt: "Peking University, 2025 untill now"
 collection: portfolio
 ---
 
