@@ -42,8 +42,8 @@ Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and P
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-## Service and leadership
-* Currently signed in to 43 different slack teams
 
-## Work experience
-None
+## Student Work experience
+* Sun Yat-sen University, Photography Club，Publicity Department Cadre, 2018-2019
+* Sun Yat-sen University, Student Union of Sun Yat-sen Medical College, Publicity Department Cadre,2018-2019
+* Peking University, Capital Institue of Pediatrics, League Branch Secretary,2025-2026
