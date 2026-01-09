@@ -30,13 +30,6 @@ Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and P
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-  
-## Teaching
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 
 ## Student Work experience
 * Sun Yat-sen University, Photography Club，Publicity Department Cadre, 2018-2019
