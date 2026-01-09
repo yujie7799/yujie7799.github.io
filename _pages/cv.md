@@ -35,3 +35,9 @@ Proficient in GraphPad Prism, Adobe Illustrator, Microsoft Excel, SPSS, R, and P
 * Sun Yat-sen University, Photography Club，Publicity Department Cadre, 2018-2019
 * Sun Yat-sen University, Student Union of Sun Yat-sen Medical College, Publicity Department Cadre, 2018-2019
 * Peking University, Capital Institue of Pediatrics, League Branch Secretary, 2025-2026
+
+## Honors & Awards
+* Sun Yat-sen University, Outstanding Student Cadre, 2019/12
+* Capital Institute of Pediatrics, 2023 Excellent Graduate Scholarship, 2023/11
+* Capital Institute of Pediatrics, 2024 Excellent Graduate Scholarship, 2024/11
+* Capital Institute of Pediatrics, 2025 Excellent Graduate, 2025/6
