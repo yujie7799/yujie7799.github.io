@@ -25,7 +25,8 @@ Investigate the drug resistance status of *Mycoplasma pneumoniae* and analyze th
 Collaboration is welcome! If you are interested in related research, please contact me.
 
 📧 Email: yujie5376@163.com  
-🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics, Beijing, China
+🔬 Lab: Department of Bacteriology, Capital Institute of Pediatrics
+🏠 Address: No. 2 Yabao Road, Chaoyang District, Beijing, China
 
 
 
