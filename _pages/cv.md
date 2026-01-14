@@ -8,6 +8,11 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+## Education
+* B.S. in Clinical Medicine, Sun Yat-sen University, 2017.9-2022.6
+* M.S. in Pediatrics, Capital Institue in Pediatrics, 2022.8-2025.6
+* Ph.D in Pediatrics, Peking University, 2025.9 untill now
   
 ## Skills
 ### Core Experimental Techniques
