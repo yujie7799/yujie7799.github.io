@@ -105,17 +105,17 @@ plt.show()
 
 ## 分析结果
 ### 1. 探索性数据分析结果
-![年龄分布直方图](/images/portfolio/python-data-visualization-picu/age_distribution.png)
+![年龄分布直方图](/images/portfolio/portfolio_mpp_data_直方图.png)
 年龄分布直方图显示患者年龄呈现**双峰分布**，集中在婴幼儿期与学龄期，提示PICU患者群体存在明显的年龄分层特征。
 
-![不同结局下各实验室指标分布箱线图](/images/portfolio/python-data-visualization-picu/lab_indicators_boxplot.png)
+![不同结局下各实验室指标分布箱线图](/images/portfolio/portfolio_mpp_data_箱线图.png)
 箱线图对比显示，死亡患者的多项实验室指标（如`lab_5237_min`、`lab_5227_min`）分布与存活患者存在显著差异，部分指标的中位数与离散程度差异明显，可作为预后预测的潜在特征。
 
 ### 2. 模型评估结果
-![混淆矩阵热力图](/images/portfolio/python-data-visualization-picu/confusion_matrix_heatmap.png)
+![混淆矩阵热力图](/images/portfolio/portfolio_mpp_data_热力图.png)
 混淆矩阵显示模型对存活患者的识别准确率较高，但对死亡患者的漏诊率需进一步优化，提示模型在少数类样本上的性能有待提升。
 
-![ROC曲线](/images/portfolio/python-data-visualization-picu/roc_curve.png)
+![ROC曲线](/images/portfolio/portfolio_mpp_data_ROC曲线.png)
 ROC曲线的AUC值为0.78，表明模型对患者预后的区分能力处于中等偏上水平，具备一定的临床应用潜力。
 
 ---
