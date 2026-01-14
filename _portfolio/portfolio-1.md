@@ -2,7 +2,7 @@
 title: "Python-儿童肺炎支原体肺炎患者-数据可视化与模型评估实战"
 collection: portfolio
 type: "Data Analysis"
-permalink: /portfolio/python-data-visualization-picu
+permalink: /portfolio/python-data-visualization-mpp
 date: 2026-01-14
 excerpt: "通过Matplotlib和Seaborn实现儿童肺炎支原体患者数据的探索性可视化与模型性能评估，为临床预后分析提供数据支撑"
 header:
