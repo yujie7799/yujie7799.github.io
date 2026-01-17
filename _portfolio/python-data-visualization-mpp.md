@@ -53,22 +53,25 @@ for i in range(len(colname)):
 plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
 \end{lstlisting}
-%由于指标较多，因此分成两次绘图，除变更列名，其余代码不变。
-%>>> colname =['白蛋白', 'D二聚体', 'C反应蛋白', 'PCT', 'CD3CD4T细胞数', 'CD3CD8T细胞数', 'CD4_CD8T细胞比值', 'NK细胞比值', 'B淋巴细胞比值']
+
+#由于指标较多，因此分成两次绘图，除变更列名，其余代码不变。
+#colname =['白蛋白', 'D二聚体', 'C反应蛋白', 'PCT', 'CD3CD4T细胞数', 'CD3CD8T细胞数', 'CD4_CD8T细胞比值', 'NK细胞比值', 'B淋巴细胞比值']
 
 #### 不同结局下实验室指标分布箱线图
 通过子图网格批量绘制多指标箱线图，对比存活与死亡患者的实验室指标分布差异：
 ```python
-colname = ['age_month', 'lab_5237_min', 'lab_5227_min', 'lab_5225_range', 'lab_5235_max', 'lab_5257_min']
-
-# 创建3x2子图网格
-fig, axs = plt.subplots(3, 2, constrained_layout=True, figsize=(10, 10))
-
-# 批量绘制箱线图
+colname = ['年龄', '最长发热时间', 'IgM', 'IgE', 'IgA', 'IgG', '白细胞数', '中性粒细胞比值', '淋巴细胞比值', '血红蛋白', '乳酸脱氢酶', 'ALT']
+fig, axs = plt.subplots(int(len(colname)/3), 3, constrained_layout=False, figsize=(8, 6), dpi=150)
 for i in range(len(colname)):
-    sns.boxplot(data=picu_data, x='HOSPITAL_EXPIRE_FLAG', y=colname[i], ax=axs[i//2, i%2])
-
-plt.suptitle("不同结局下各实验室指标分布", fontsize=16)
+...     row = i // 3
+...     col = i % 3
+...     ax = axs[row, col]
+...     sns.boxplot(data=mpp_data, x="MPP分类", y=colname[i], ax=axs[row, col])
+...     ax.set_title(colname[i], fontsize=6, pad=3)
+...     ax.set_xlabel(colname[i], fontsize=5, labelpad=2)
+...     ax.set_ylabel('Count', fontsize=5, labelpad=2)
+...     ax.tick_params(axis='both', labelsize=4, pad=1)
+plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
 ```
 
@@ -76,24 +79,27 @@ plt.show()
 #### 混淆矩阵热力图
 自定义函数绘制混淆矩阵热力图，直观展示分类模型的预测结果分布：
 ```python
-from sklearn.metrics import confusion_matrix
-import seaborn as sns
+def confusion_matrix_plot(y_true, y_pred_lr, threshold=0.5, title='混淆矩阵'):
+...     y_true: 真实标签数组
+...     y_pred_lr: 模型预测的正类概率数组
+...     threshold: 分类阈值
+...     title: 图表标题
+...     y_pred = (y_pred_lr > threshold).astype(int)
+...     cm = confusion_matrix(y_true, y_pred)
+...     fig, ax = plt.subplots(figsize=(5, 4))
+...     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax)
+...     ax.set_xlabel('预测标签')
+...     ax.set_ylabel('真实标签')
+...     ax.set_title(title)
+...     ax.xaxis.set_ticklabels(['轻症肺炎(0)', '重症肺炎(1)'])
+...     ax.yaxis.set_ticklabels(['轻症肺炎(0)', '重症肺炎(1)'])
+...     plt.show()
 
-def confusion_matrix_plot(y_true, y_pred_prob, threshold=0.5, title='混淆矩阵'):
-    y_pred = (y_pred_prob > threshold).astype(int)
-    cm = confusion_matrix(y_true, y_pred)
-    
-    fig, ax = plt.subplots(figsize=(5, 4))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax)
-    ax.set_xlabel('预测标签')
-    ax.set_ylabel('真实标签')
-    ax.set_title(title)
-    ax.xaxis.set_ticklabels(['存活(0)', '死亡(1)'])
-    ax.yaxis.set_ticklabels(['存活(0)', '死亡(1)'])
-    plt.show()
-
-# 调用函数绘制混淆矩阵
-confusion_matrix_plot(y_true=y_test, y_pred_prob=y_pred_prob, threshold=0.5)
+#调用函数绘制混淆矩阵
+y_true=y_test
+y_pred_lr=y_pred_lr
+threshold=0.5
+confusion_matrix_plot(y_true=y_test, y_pred_lr=y_pred_lr, threshold=0.5)
 ```
 
 #### ROC曲线
@@ -102,17 +108,19 @@ confusion_matrix_plot(y_true=y_test, y_pred_prob=y_pred_prob, threshold=0.5)
 from sklearn.metrics import roc_curve, roc_auc_score
 
 # 计算ROC曲线参数
-fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
-roc_auc = roc_auc_score(y_test, y_pred_prob)
+fpr, tpr, _ = roc_curve(y_test, y_pred_lr)
+roc_auc = roc_auc_score(y_test, y_pred_lr)
 
 # 绘制ROC曲线
-plt.figure(figsize=(8, 6))
-plt.plot(fpr, tpr, label=f'ROC曲线 (AUC = {roc_auc:.2f})')
-plt.plot([0, 1], [0, 1], 'k--', label='随机猜测')
-plt.xlabel('假阳性率(FPR)')
-plt.ylabel('真阳性率(TPR)')
-plt.title(f'ROC曲线 (AUC = {roc_auc:.2f})')
-plt.legend()
+plt.figure(figsize=(6, 5))
+plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC curve (area = {roc_auc:.2f})')
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('假阳性率 (1 - Specificity)')
+plt.ylabel('真阳性率 (Sensitivity)')
+plt.title(f'ROC曲线 (AUC = {roc_auc:.4f})')
+plt.legend(loc="lower right")
 plt.show()
 ```
 
