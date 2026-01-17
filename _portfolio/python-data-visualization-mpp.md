@@ -33,15 +33,28 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 设置中文显示
-plt.rcParams["font.sans-serif"] = 'SimHei'
-plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.sans-serif"] = 'Arial Unicode MS'
 
-# 绘制年龄分布直方图
-plt.figure(figsize=(8, 5))
-sns.histplot(data=picu_data, x='age_month', kde=True)
-plt.title("年龄分布直方图")
+# 绘制患儿实验室检查指标分布直方图
+import matplotlib.pyplot as plt
+import seaborn as sns
+plt.rcParams["font.sans-serif"] = 'Arial Unicode MS'
+colname = ['年龄', '最长发热时间', 'IgM', 'IgE', 'IgA', 'IgG', '白细胞数', '中性粒细胞比值', '淋巴细胞比值', '血红蛋白', '乳酸脱氢酶', 'ALT']
+fig, axs = plt.subplots(int(len(colname)/3), 3, constrained_layout=False, figsize=(8, 6), dpi=150)
+for i in range(len(colname)):
+...     row = i // 3
+...     col = i % 3
+...     ax = axs[row, col]
+        sns.histplot(x=colname[i], data=mpp_data, alpha=0.4, kde=True, ax=axs[row, col])
+...     ax.set_title(colname[i], fontsize=6, pad=3)
+...     ax.set_xlabel(colname[i], fontsize=5, labelpad=2)
+...     ax.set_ylabel('Count', fontsize=5, labelpad=2)
+...   ax.tick_params(axis='both', labelsize=4, pad=1)
+plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
-```
+\end{lstlisting}
+%由于指标较多，因此分成两次绘图，除变更列名，其余代码不变。
+%>>> colname =['白蛋白', 'D二聚体', 'C反应蛋白', 'PCT', 'CD3CD4T细胞数', 'CD3CD8T细胞数', 'CD4_CD8T细胞比值', 'NK细胞比值', 'B淋巴细胞比值']
 
 #### 不同结局下实验室指标分布箱线图
 通过子图网格批量绘制多指标箱线图，对比存活与死亡患者的实验室指标分布差异：
