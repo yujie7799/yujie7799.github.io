@@ -145,7 +145,7 @@ plt.title(f'ROC曲线 (AUC = {roc_auc:.4f})')
 plt.legend(loc="lower right")
 plt.show()
 ```
-4. 模型解释性分析
+### 4. 模型解释性分析
 #### shap摘要图
 自定义函数绘制shap摘要图，展示全局的特征重要性，以及特征值对模型输出的影响:
 ```python
