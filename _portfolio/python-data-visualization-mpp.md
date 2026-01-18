@@ -218,7 +218,7 @@ plt.show()
 ![shap依赖图](/image/portfolio/python-data-visualization-mpp/shap依赖图-1.png)
 **结论：**中性粒细胞的shap依赖图显示中性粒细胞比值越高，对模型预测 “重症肺炎” 的正向推动作用越强，且这种作用会与淋巴细胞比值的异常变化相互叠加。
 
-![shap力图](/image/portfolio/python-data-visualization-mpp/shap力图-1.png)
+![shap力图](/image/portfolio/python-data-visualization-mpp/力图.png)
 **结论：**力图中显示，预测基准值位于2-4之间，该患者的最终预测值为0.57，他的IgA、IgM、年龄、淋巴细胞比值是增加重症肺炎支原体肺炎的风险特征（红色推力），中性粒细胞比值、C反应蛋白、IgG、CD3C4T细胞数、CD4/CD8T细胞比值（蓝色推力）是降低重症肺炎支原体肺炎风险的特征。基准值+ 红色推力 - 蓝色拉力 = 最终预测（0.57）。
 
 ---
