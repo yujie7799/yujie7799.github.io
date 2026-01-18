@@ -74,7 +74,9 @@ for i in range(len(colname)):
 plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
 ```
-### 2. 逻辑回归模型构建
+### 2. 模型构建
+#### 创建逻辑回归模型
+```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
@@ -90,6 +92,7 @@ y_pred_lr = log_reg.predict_proba(X_test)[:, 1]
 model_filename = 'mpp_log_reg.joblib'
 joblib.dump(log_reg, model_filename)
 print(f"模型已保存到: {model_filename}")
+```
 
 ### 3. 模型评估可视化
 #### 混淆矩阵热力图
