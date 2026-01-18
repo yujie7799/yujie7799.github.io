@@ -160,11 +160,13 @@ shap.summary_plot(shap_values, X_train)
 # 绘制shap条形图
 shap.summary_plot(shap_values, X_train, plot_type="bar")
 ```
+
 #### 中性粒细胞比值shap依赖图
 深入探究中性粒细胞比值如何影响模型输出，以及它与其他特征的交互效应：
 ```python
 shap.dependence_plot('中性粒细胞比值', shap_values.values, X_train)
 ```
+
 #### 中性粒细胞比值shap力图
 解释模型对某一位患者的预测过程：
 ```python
