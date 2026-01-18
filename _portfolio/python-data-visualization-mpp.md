@@ -74,8 +74,24 @@ for i in range(len(colname)):
 plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
 ```
+### 2. 逻辑回归模型构建
+from sklearn.linear_model import LogisticRegression
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix, roc_auc_score, roc_curve
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+import joblib
+import warnings
+warnings.filterwarnings("ignore")
+log_reg = LogisticRegression(penalty='l2', C=1.0, l1_ratio=None, solver='lbfgs', max_iter=1000, class_weight=None, fit_intercept=True, random_state=42, n_jobs=None, verbose=0, multi_class='auto')
+log_reg.fit(X_train, y_train)
+y_pred_lr = log_reg.predict_proba(X_test)[:, 1]
+model_filename = 'mpp_log_reg.joblib'
+joblib.dump(log_reg, model_filename)
+print(f"模型已保存到: {model_filename}")
 
-### 2. 模型评估可视化
+### 3. 模型评估可视化
 #### 混淆矩阵热力图
 自定义函数绘制混淆矩阵热力图，直观展示分类模型的预测结果分布：
 ```python
@@ -145,13 +161,11 @@ plt.show()
 
 ### 2. 模型评估结果
 ![混淆矩阵热力图](/image/portfolio/python-data-visualization-mpp/热力图.png)
-
 *图3：混淆矩阵热力图*
 
 混淆矩阵显示模型对轻症肺炎支原体肺炎患者的识别准确率较高，但对重症患者的漏诊率需进一步优化，提示模型在少数类样本上的性能有待提升。
 
 ![ROC曲线](/image/portfolio/python-data-visualization-mpp/ROC曲线.png)
-
 *图4：ROC曲线*
 
 ROC曲线的AUC值为0.8077，表明该模型对患者预后的区分能力处于中等偏上水平，具备一定的临床应用潜力。
