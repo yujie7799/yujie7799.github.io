@@ -1,4 +1,4 @@
-<img width="154" height="49" alt="image" src="https://github.com/user-attachments/assets/e095f578-c6b6-4539-8e79-a96d67225366" />---
+---
 title: "Python-儿童肺炎支原体肺炎患者-数据可视化与模型评估实战"
 collection: portfolio
 type: "Data Analysis"
