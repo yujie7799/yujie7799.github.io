@@ -73,6 +73,9 @@ for i in range(len(colname)):
 ...     ax.tick_params(axis='both', labelsize=4, pad=1)
 plt.tight_layout(pad=0.3, h_pad=0.8)
 plt.show()
+
+#由于指标较多，因此分成两次绘图，除变更列名，其余代码不变。
+#colname =['白蛋白', 'D二聚体', 'C反应蛋白', 'PCT', 'CD3CD4T细胞数', 'CD3CD8T细胞数', 'CD4_CD8T细胞比值', 'NK细胞比值', 'B淋巴细胞比值']
 ```
 ### 2. 模型构建
 #### 创建逻辑回归模型
