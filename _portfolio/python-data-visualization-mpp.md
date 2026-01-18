@@ -1,4 +1,4 @@
----
+<img width="154" height="49" alt="image" src="https://github.com/user-attachments/assets/e095f578-c6b6-4539-8e79-a96d67225366" />---
 title: "Python-儿童肺炎支原体肺炎患者-数据可视化与模型评估实战"
 collection: portfolio
 type: "Data Analysis"
@@ -160,6 +160,28 @@ shap.summary_plot(shap_values, X_train)
 # 绘制shap条形图
 shap.summary_plot(shap_values, X_train, plot_type="bar")
 ```
+#### 中性粒细胞比值shap依赖图
+深入探究中性粒细胞比值如何影响模型输出，以及它与其他特征的交互效应：
+```python
+shap.dependence_plot('中性粒细胞比值', shap_values.values, X_train)
+```
+#### 中性粒细胞比值shap力图
+解释模型对某一位患者的预测过程：
+```python
+plt.rcParams['font.size'] = 8
+plt.rcParams['xtick.labelsize'] = 7
+plt.rcParams['ytick.labelsize'] = 7
+shap.force_plot(explainer.expected_value, shap_values.values[6], X_train.iloc[6], matplotlib=True, show=False)
+ax = plt.gca()
+for text in ax.texts:
+...     current_size = text.get_fontsize()
+...     text.set_fontsize(current_size * 0.8)
+... 
+plt.gcf().set_size_inches(12, 4)
+plt.tight_layout(pad=0.5)
+plt.show()
+```
+
 
 ## 分析结果
 ### 1. 探索性数据分析结果
@@ -190,5 +212,11 @@ shap.summary_plot(shap_values, X_train, plot_type="bar")
 
 ![shap条形图](/image/portfolio/python-data-visualization-mpp/shap条形图-1.png)
 **结论：**shap条形显示中性粒细胞比值的平均贡献度最大，是对模型预测贡献最大的指标。其次为淋巴细胞比值、D 二聚体、C 反应蛋白，是模型的重要辅助预测因子。其余指标的平均贡 献度较小，对模型整体预测的贡献相对有限。
+
+![shap依赖图](/image/portfolio/python-data-visualization-mpp/shap依赖图-1.png)
+**结论：**中性粒细胞的shap依赖图显示中性粒细胞比值越高，对模型预测 “重症肺炎” 的正向推动作用越强，且这种作用会与淋巴细胞比值的异常变化相互叠加。
+
+![shap力图](/image/portfolio/python-data-visualization-mpp/shap力图-1.png)
+**结论：**力图中显示，预测基准值位于2-4之间，该患者的最终预测值为0.57，他的IgA、IgM、年龄、淋巴细胞比值是增加重症肺炎支原体肺炎的风险特征（红色推力），中性粒细胞比值、C反应蛋白、IgG、CD3C4T细胞数、CD4/CD8T细胞比值（蓝色推力）是降低重症肺炎支原体肺炎风险的特征。基准值+ 红色推力 - 蓝色拉力 = 最终预测（0.57）。
 
 ---
