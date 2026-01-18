@@ -142,6 +142,20 @@ plt.title(f'ROC曲线 (AUC = {roc_auc:.4f})')
 plt.legend(loc="lower right")
 plt.show()
 ```
+#### shap摘要图
+自定义函数绘制shap摘要图，展示全局的特征重要性，以及特征值对模型输出的影响
+```python
+Import Shap
+explainer = shap.Explainer(log_reg, X_train)
+shape_values = explainer(X_train)
+shap_values = explainer(X_train)
+
+# 绘制shap蜂群图
+shap.summary_plot(shap_values, X_train)
+
+# 绘制shap条形图
+shap.summary_plot(shap_values, X_train, plot_type="bar")
+```
 
 ## 分析结果
 ### 1. 探索性数据分析结果
@@ -165,5 +179,12 @@ plt.show()
 ![ROC曲线](/image/portfolio/python-data-visualization-mpp/ROC曲线.png)
 
 **结论：**ROC曲线的AUC值为0.8077，表明该模型对患者预后的区分能力处于中等偏上水平，具备一定的临床应用潜力。
+
+### 3. 模型解释性分析
+![shap蜂群图](/image/portfolio/python-data-visualization-mpp/蜂群图-1.png)
+**结论：**shap蜂群图显示中性粒细胞比值、D 二聚体、C 反应蛋白升高，淋巴细胞比值的降低会增加预测为重症肺炎支原体肺炎的概率。
+
+![shap条形图](/image/portfolio/python-data-visualization-mpp/条形图-1.png)
+**结论：**shap条形显示中性粒细胞比值的平均贡献度最大，是对模型预测贡献最大的指标。其次为淋巴细胞比值、D 二聚体、C 反应蛋白，是模型的重要辅助预测因子。其余指标的平均贡 献度较小，对模型整体预测的贡献相对有限
 
 ---
